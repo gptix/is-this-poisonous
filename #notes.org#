@@ -1,7 +1,7 @@
 - [X] reshape local repo
   - [X] create data directory
   - [X] move notebooks to notebooks dir
-- [ ] import data to local repo
+- [X] import data to local repo
 - [ ] test data import to notebook on local jupyter
 - [ ] rename column names
 - [ ] inflate values from single letters to strings
