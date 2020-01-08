@@ -1,7 +1,6 @@
-(setf cols '(
-	     
+(setf cols '(	     
 	     (("1" "cap_shape" )
-	      (("bell" "b") ("conical" "c") ("convex" "x") ("flat" "f") ("WYknobbed" "k") ("sunken" "s")))
+	      (("bell" "b") ("conical" "c") ("convex" "x") ("flat" "f") ("knobbed" "k") ("sunken" "s")))
 	     
 	     (("2" "cap_surface")
 	      (("fibrous" "f") ("grooves" "g") ("scaly" "y") ("smooth" "s")))
