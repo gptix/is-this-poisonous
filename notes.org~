@@ -6,17 +6,14 @@
 - [X] rename column names
 - [X] inflate values from single letters to strings
 - [X] get baseline
-- [X] make tree
+- [ ] make tree
+- [ ] 
 
 
 * Now 
-- [X] review requirements for pass
-- [X] review requirements for great
-- [ ] add visualizations
-  - [ ] show importances
-  - [ ] show correlations
-- [ ] publish blog entry
-- [ ] edit notebook to remove stuff from earlier work
+- [ ] review requirements for pass
+- [ ] review requirements for gret
+
 
 
 * other
