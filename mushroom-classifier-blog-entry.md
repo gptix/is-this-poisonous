@@ -8,6 +8,8 @@ By paying attention to the physical characteristics of a mushroom, we can decide
 
 This one is easy:
 
+![Picture of Destroying Angel](https://raw.githubusercontent.com/gptix/is-this-poisonous/blob/master/destroying_angel.jpg)
+
 <picture of destroying angel>
 
     • White cap
