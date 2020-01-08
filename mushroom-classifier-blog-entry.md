@@ -20,21 +20,62 @@ This one is easy:
 
 **VERY POISONOUS!** It is not called **‘Destroying Angel’** for nothing!
 
-Deciding whether a mushroom is edible or poisonous is an example of ‘classification’. We assign an object to exactly one of some number of categories.  In this case, the categories are ‘edible’ and ‘poisonous’.  Given an ‘observation’, we note values of ‘features’, and decide how to classify the object of observation.
+We should devise a way to use information available to predict whether a particular mushroom is poisonous or edible.
 
-Another type of prediction we could do is ‘regression’, where we might try to predict or decide a value, from a continuous range of values, for a certain aspect of the object. For mushrooms, we might decide or predict a price per pound, given our observation.
+### Classfication vs. Regression
 
-I have created a classifier that predicts whether a mushroom is poisonous based on ‘features’ of the mushroom.
+We would be making a **binary classification* ( **edible** or **poisonous**) of observed mushrooms.
+
+A different device might do something like predict the sale price at a farmers' market of a crop of mushrooms. Unlike a **classification** of an observrtion into one of a set of separate alternatives, a **regression** outputs a value along some continuous range, such as a price within a range.
+
+### Good Data
+
+To build such a classifier, we could use some trusted data to build a function that indicates whether a mushroom should be treated as poisonous or edible.
+
+I used a dataset named the **Mushroom Data Set** from the valuable **University of California Irvine Machine Learning Repository**, at https://archive.ics.uci.edu/ml/datasets/Mushroom.
+
+### Foo
+
+I imported the data into a Pandas dataframe.
+
+### Baseline
+
+To see whether a classifier model is particularly useful, we can establish a baseline by seeing how often we would be correct if we simply make the same 'guess' every time.
+
+Using the data from the UCI Mushroom set, we will be right a little over 53% of the time if we 'guess' that every mushroom is **edible**.
+
+### Should we try to be Accurate?
+
+We should not try to be accurate.
+
+**Accuracy** is a measure of the fraction of all measurements (or predictions, or classifications) that we get right. With our classifier, this would be 
+
+('we guess poisonous and it's poisonous' + 'we guess edible and it's edible')  
+
+divided by 
+
+all guesses.
+
+But, I want to make really sure I identify **every** poisonous mushroom, even if this entails mis-classifying some edible mushrooms as poisonous.
+
+**Recall** is a metric to use for this. it would be 
+
+('we predicted poisonous') 
+
+divided by
+
+('really is poisonous' - which is the same as ['guessed poisonous correctly' plus 'guessed edible **incorrectly**']).
+
+I want this really close to one.
+
+So, **recall** is our choice of metric.
+
 
 **PLEASE NOTE:** This is work for studies I am doing at Lambda School, in the Data Science curriculum, cohort DS10 (go Laser Sharks!). I am not a mycologist.
 
 **DO NOT USE THIS CLASSIFIER TO DECIDE WHETHER TO EAT ANY MUSHROOM.**
 
 If you are interested in finding a variety of succulent mushrooms, and some inedible but fascinating mushrooms and other fungi, please join me at the Mushroom Club of Georgia (http://www.gamushroomclub.org).
-
-I used a dataset named the Mushroom Data Set from the valuable University of California Irvine Machine Learning Repository, at https://archive.ics.uci.edu/ml/datasets/Mushroom.
-
-After importing the dataset into Pandas, I determined that, as a baseline, simply guessing ‘edible’ for a mushroom* would be correct a little over 53% of the time.
 
 To improve on this, I have fit a Random Forest model to a subset of the data, then validated the model using a separate subset. After a number of changes, I tested the model on a third, carefully segregated subset of the data.
 
