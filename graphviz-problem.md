@@ -23,8 +23,9 @@ pipenv install graphviz - success
 
 **Error message:**
 
-`---------------------------------------------------------------------------
-ModuleNotFoundError                       Traceback (most recent call last)
+`---------------------------------------------------------------------------`
+
+`ModuleNotFoundError                       Traceback (most recent call last)
 <ipython-input-1-f7133d3517ab> in <module>
 ----> 1 import graphviz`
 
