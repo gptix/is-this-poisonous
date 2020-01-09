@@ -29,7 +29,7 @@ This one is easy:
 
 We should make a way to predict whether a particular mushroom is poisonous or edible.
 
-## Classfication vs. Regression
+## Classification vs. Regression
 
 We would be making a **binary classification** ( **edible** or **poisonous**) of observed mushrooms.
 
@@ -39,7 +39,7 @@ A different tool might do something like predict the sale price at a farmers' ma
 
 To build such a classifier, we could use some trusted data to build a function that indicates whether a mushroom should be treated as poisonous or edible.
 
-I used a dataset named the **Mushroom Data Set** from the valuable **University of California Irvine Machine Learning Repository**, at [https://archive.ics.uci.edu/ml/datasets/Mushroom](https://archive.ics.uci.edu/ml/datasets/Mushroom).
+I used a data set named the **Mushroom Data Set** from the valuable **University of California Irvine Machine Learning Repository**, at [https://archive.ics.uci.edu/ml/datasets/Mushroom](https://archive.ics.uci.edu/ml/datasets/Mushroom).
 
 ## Workflow
 
@@ -47,11 +47,11 @@ My work on this is available on github, at [https://github.com/gptix/is-this-poi
 
 ## Get Data
 
-I downloaded data from UCI, then imported it into a Pandas dataframe, and did some initial checking of the data.  This dataset is very well structured and documented.
+I downloaded data from UCI, then imported it into a Pandas dataframe, and did some initial checking of the data.  This data set is very well structured and documented.
 
 I then split the data into the target (poisonousness) and features (the facts noticed, used to predict toxicity).
 
-I also split the data into three sets: one for training models, one for validating trained models, and a third for final testing after validaation.
+I also split the data into three sets: one for training models, one for validating trained models, and a third for final testing after validation.
 
 ## Baseline
 
@@ -59,7 +59,7 @@ To see whether a classifier (or regression)  model is particularly useful, we ca
 
 Using the data from the UCI Mushroom set, we will be right a little over 53% of the time if we 'guess' that every mushroom is **edible**.
 
-Here is a histogram showing the split of **edible** vs. **poisonous** in the dataset.
+Here is a histogram showing the split of **edible** vs. **poisonous** in the data set.
 
 ![Histogram of edible vs. poisonous](https://raw.githubusercontent.com/gptix/gptix.github.io/master/histogram.png)
 
@@ -75,7 +75,7 @@ I built a decision tree classifier using SciKit Learn's sklearn.DecisionTreeClas
 
 Here is the tree:
 
-![Deision Tree diagram](https://raw.githubusercontent.com/gptix/gptix.github.io/master/tree.png)
+![Decision Tree diagram](https://raw.githubusercontent.com/gptix/gptix.github.io/master/tree.png)
 
 ### Should we try to be Accurate?
 
@@ -119,4 +119,4 @@ This is work for studies I am doing at Lambda School, in the Data Science curric
 
 If you are interested in finding a variety of succulent mushrooms, and some inedible but fascinating mushrooms and other fungi, please join me at the [Mushroom Club of Georgia](http://www.gamushroomclub.org).
 
-* The dataset actually includes inedible mushrooms in the ‘poisonous’ category, although some mushrooms are neither edible nor poisonous.
+* The data set actually includes inedible mushrooms in the ‘poisonous’ category, although some mushrooms are neither edible nor poisonous.
