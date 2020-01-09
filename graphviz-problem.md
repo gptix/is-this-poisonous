@@ -27,8 +27,8 @@ pipenv install graphviz - success
 ModuleNotFoundError                       Traceback (most recent call last)
 <ipython-input-1-f7133d3517ab> in <module>
 ----> 1 import graphviz`
-`
-ModuleNotFoundError: No module named 'graphviz' `
+
+`ModuleNotFoundError: No module named 'graphviz' `
 
 I **have** researched this on the web, and tried various solutions.
 
