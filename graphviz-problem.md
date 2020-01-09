@@ -19,7 +19,7 @@ pipenv install graphviz - success
 
 **Cell code:**
 
-`import graphviz1`
+`import graphviz`
 
 **Error message:**
 
