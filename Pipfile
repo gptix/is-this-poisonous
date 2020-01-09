@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 graphviz = "*"
+pydot = "*"
+pydotplus = "*"
 
 [requires]
 python_version = "3.7"

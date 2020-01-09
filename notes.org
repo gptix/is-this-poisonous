@@ -1,0 +1,21 @@
+- [X] reshape local repo
+  - [X] create data directory
+  - [X] move notebooks to notebooks dir
+- [X] import data to local repo
+- [X] test data import to notebook on local jupyter
+- [X] rename column names
+- [X] inflate values from single letters to strings
+- [X] get baseline
+- [X] make tree
+
+
+
+* Next
+- [ ] remove extra stuff from bottom of notebook
+- [X] restart kernel and test notebook
+- [ ] push to git
+- [ ] edit blog post and push
+
+- [ ] visualize feature importances
+- [ ] measure correlations of two most important features
+- [ ] visualize these
