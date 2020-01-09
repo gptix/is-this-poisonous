@@ -105,7 +105,7 @@ So, **recall** is our choice of metric.
 
 ### Recall Scores on Decision Tree
 
-I got a recall score, on my **validation set**, of **99.5%**. Finally, I calculated the recall score on my (reserved) **test** set of **98.8**.
+I got a recall score, on my **validation set**, of **99.5%**. Finally, I calculated the recall score on my (reserved) **test** set of **98.8%**.
 
 Both of these scores are good, but I have further work to do, like trying different models to see if they get better recall scores. I am also interested in why my recall score using test data is lower than using my validation data. Perhaps this is not significant.
 
