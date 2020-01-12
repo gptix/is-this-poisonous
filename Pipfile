@@ -9,6 +9,7 @@ verify_ssl = true
 graphviz = "*"
 pydot = "*"
 pydotplus = "*"
+pdpbox-pdp = "*"
 
 [requires]
 python_version = "3.7"
